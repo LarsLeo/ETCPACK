@@ -18,6 +18,6 @@ ENV HOME /app
 
 ADD ./source /app
 
-RUN g++ -O3 -w -lz -g /app/image.h /app/image.cxx /app/etcpack.cxx /app/etcdec.cxx -o etcpack
+RUN g++ -O2 -w -lz -g /app/image.h /app/image.cxx /app/etcpack.cxx /app/etcdec.cxx -o etcpack
 
 CMD ["/bin/bash"]
